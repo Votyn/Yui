@@ -33,7 +33,7 @@ exports.run = (bot, msg) => {
 
 
     // Mentioned user banned
-    target.ban(reason);
+    target.ban(`**Responsible User:** ${msg.author.username} **Reason:** ${reason}`);
 
     msg.channel.send(`:white_check_mark: The user **${target.user.tag}** has successfully been banned.`).then(m => m.delete(3000));
 };
