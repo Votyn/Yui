@@ -32,7 +32,7 @@ exports.run = (bot, msg) => {
         return msg.channel.send(`:x: You may not kick the user ${target.user.tag}.`).then(m => m.delete(3000));
 
     // Mentioned user kicked
-    target.kick(reason);
+    target.kick(`**Responsible User:** ${message.author}\n**Reason:** ${reason}`);
 
     msg.channel.send(`:white_check_mark: The user **${target.user.tag}** has successfully been kicked.`).then(m => m.delete(3000));
 };
