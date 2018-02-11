@@ -26,7 +26,7 @@ const getCommandContent = content => {
     return output.replace(/^\s+/, '');
 }
 
-// Trigggers every time the bot sees a message
+// Triggers every time the bot sees a message
 bot.on("message", msg => {
     if (bot.user.id === msg.author.id) return;
 
