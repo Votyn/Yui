@@ -1,0 +1,15 @@
+{
+  "name": "Yui",
+  "version": "1.0.0",
+  "main": "Yui.js",
+  "author": "SushiiDev",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "fs": "^0.0.1-security",
+    "fs-readdir-recursive": "^1.1.0",
+    "nodemon": "^1.14.12",
+    "path": "^0.12.7",
+    "snekfetch": "^3.6.4"
+  }
+}
